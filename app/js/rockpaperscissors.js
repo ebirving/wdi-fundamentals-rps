@@ -62,7 +62,7 @@ function getWinner(playerMove,computerMove) {
             winner='tie';
         }
     };
-    else if (playerMove='scissors'){
+    else {
         if (computerMove='rock'){
             winner='computer';
         }
