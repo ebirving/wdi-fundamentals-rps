@@ -22,16 +22,16 @@ function randomPlay() {
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
-    // Write an expression that operates on a variable called `move`
-    // If a `move` has a value, your expression should evaluate to that value.
-    // However, if `move` is not specified / is null, your expression should equal `getInput()`.
+// Write an expression that operates on a variable called `move`
+// If a `move` has a value, your expression should evaluate to that value.
+// However, if `move` is not specified / is null, your expression should equal `getInput()`.
     return move || getInput();
 }
 
 function getComputerMove(move) {
-    // Write an expression that operates on a variable called `move`
-    // If a `move` has a value, your expression should evaluate to that value.
-    // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
+// Write an expression that operates on a variable called `move`
+// If a `move` has a value, your expression should evaluate to that value.
+// However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
     return move || randomPlay();
 }
 
@@ -62,7 +62,7 @@ function getWinner(playerMove,computerMove) {
             winner = 'tie';
         }
     }
-    else {
+    else if (playerMove === 'scissors') {
         if (computerMove === 'rock'){
             winner = 'computer';
         }
@@ -95,10 +95,10 @@ function playToFive() {
         console.log('The score is Player: ' + playerWins + ' , Computer: ' + computerWins + '\n');
     }
     if (playerWins === 5) {
-        console.log('Player wins!');
+        console.log('Player wins the game!');
     }
     else if (computerWins === 5) {
-        console.log('Computer wins!');
+        console.log('Computer wins the game!');
     }
     return [playerWins, computerWins];
 }
